@@ -54,7 +54,7 @@ public class livro {
 	@Override
 	public String toString() {
 		String relatorio ="\nTitulo"+this.titulo;
-		relatorio += "\nQTD:"+this.quantidade;
+		relatorio += "\nISBN:"+this.isbn;
 		return relatorio;
 	}
 	

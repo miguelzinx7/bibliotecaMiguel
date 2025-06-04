@@ -19,28 +19,31 @@ public class aplicacao {
                 n = Byte.parseByte(teclado.nextLine());
 
                 switch (n) {
-                    case 1:
-                        System.out.print("Título: ");
-                        String titulo = teclado.nextLine();
+                	case 1:
+	                    System.out.print("Título: ");
+	                    String titulo = teclado.nextLine();
+	
+	                    System.out.print("Autor: ");
+	                    String autor = teclado.nextLine();
+	
+	                    System.out.print("Editora: ");
+	                    String editora = teclado.nextLine();
+	
+	                    System.out.print("Ano: ");
+	                    int ano = Integer.parseInt(teclado.nextLine());
+	
+	                    System.out.print("Quantidade de exemplares: ");
+	                    int quantidade = Integer.parseInt(teclado.nextLine());
+	
+	                    for (int i = 0; i < quantidade; i++) {
+	                        System.out.print("ISBN do exemplar " + (i + 1) + ": ");
+	                        int isbn = Integer.parseInt(teclado.nextLine());
+	
+	                        livro novoLivro = new livro(titulo, autor, editora, isbn, ano, 1);
+	                        blibioteca.adicionarLivro(novoLivro);
+	                    }
+                    break;
 
-                        System.out.print("Autor: ");
-                        String autor = teclado.nextLine();
-
-                        System.out.print("Editora: ");
-                        String editora = teclado.nextLine();
-
-                        System.out.print("ISBN: ");
-                        int isbn = Integer.parseInt(teclado.nextLine());
-
-                        System.out.print("Ano: ");
-                        int ano = Integer.parseInt(teclado.nextLine());
-
-                        System.out.print("Quantidade: ");
-                        int quantidade = Integer.parseInt(teclado.nextLine());
-
-                        livro novoLivro = new livro(titulo, autor, editora, isbn, ano, quantidade);
-                        blibioteca.adicionarLivro(novoLivro);
-                        break;
 
                     case 2:
                         System.out.print("Informe o ISBN do livro para remover: ");

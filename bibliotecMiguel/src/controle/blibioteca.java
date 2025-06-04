@@ -16,10 +16,10 @@ public class blibioteca {
     public static void consultarLivroPorISBN(int isbn) {
         livro l = livro_repositorio.consultarPorISBN(isbn);
         if (l != null) {
-            System.out.println("🔍 Livro encontrado:");
+            System.out.println(" Livro encontrado:");
             System.out.println(l);
         } else {
-            System.out.println("❌ Livro não encontrado.");
+            System.out.println("Livro n�o encontrado.");
         }
     }
 

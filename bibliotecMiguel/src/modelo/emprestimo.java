@@ -19,6 +19,6 @@ public class emprestimo {
 
     @Override
     public String toString() {
-        return "📚 Empréstimo -> CPF: " + cpfUsuario + ", ISBN: " + isbnLivro;
+        return " Emprestimo -> CPF: " + cpfUsuario + ", ISBN: " + isbnLivro;
     }
 }

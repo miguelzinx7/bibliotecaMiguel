@@ -34,7 +34,7 @@ public class livro {
 	public int getAno() {
 		return ano;
 	}
-	// set qtd pois vai sofrer alteraÃ§Ã£o
+	// set qtd pois vai sofrer alteração
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}

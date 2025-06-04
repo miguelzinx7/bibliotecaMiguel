@@ -20,7 +20,7 @@ public class aplicacao {
 
                 switch (n) {
                 	case 1:
-	                    System.out.print("Título: ");
+	                    System.out.print("Titulo: ");
 	                    String titulo = teclado.nextLine();
 	
 	                    System.out.print("Autor: ");
@@ -65,7 +65,7 @@ public class aplicacao {
                         System.out.print("Nome: ");
                         String nome = teclado.nextLine();
 
-                        System.out.print("CPF (apenas números): ");
+                        System.out.print("CPF (apenas numeros): ");
                         int cpf = Integer.parseInt(teclado.nextLine());
 
                         System.out.print("Email: ");
@@ -76,7 +76,7 @@ public class aplicacao {
                         break;
 
                     case 6:
-                        System.out.print("Informe o CPF do usuário para remover: ");
+                        System.out.print("Informe o CPF do usuario para remover: ");
                         int cpfRemover = Integer.parseInt(teclado.nextLine());
                         usuarios.removerUsuario(cpfRemover);
                         break;
@@ -86,7 +86,7 @@ public class aplicacao {
                         break;
                         
                     case 8:
-                        System.out.print("CPF do usuário: ");
+                        System.out.print("CPF do usuario: ");
                         int cpfEmp = Integer.parseInt(teclado.nextLine());
                         System.out.print("ISBN do livro: ");
                         int isbnEmp = Integer.parseInt(teclado.nextLine());
@@ -94,7 +94,7 @@ public class aplicacao {
                         break;
 
                     case 9:
-                        System.out.print("CPF do usuário: ");
+                        System.out.print("CPF do usuario: ");
                         int cpfDev = Integer.parseInt(teclado.nextLine());
                         System.out.print("ISBN do livro: ");
                         int isbnDev = Integer.parseInt(teclado.nextLine());
@@ -110,15 +110,15 @@ public class aplicacao {
                         
 
                     case 0:
-                        System.out.println("👋 Encerrando o programa...");
+                        System.out.println("� Encerrando o programa...");
                         break;
 
                     default:
-                        System.out.println("❗ Opção inválida.");
+                        System.out.println("Op��o invalida .");
                         break;
                 }
             } catch (Exception e) {
-                System.out.println("❗ Erro na entrada. Tente novamente.");
+                System.out.println("Erro na entrada. Tente novamente.");
                 n = -1; // mantém no loop
             }
 
@@ -128,19 +128,19 @@ public class aplicacao {
     }
 
     public static void print_menu() {
-        String menu = "\n📚 MENU - BIBLIOTECA 📚\n";
+        String menu = "\n MENU - BIBLIOTECA \n";
         menu += "1 - Adicionar livro\n";
         menu += "2 - Remover livro\n";
         menu += "3 - Listar livros\n";
         menu += "4 - Buscar livro por autor\n";
-        menu += "5 - Adicionar usuário\n";
-        menu += "6 - Remover usuário\n";
-        menu += "7 - Listar usuários\n";
+        menu += "5 - Adicionar usuario\n";
+        menu += "6 - Remover usuario\n";
+        menu += "7 - Listar usuarios\n";
         menu += "8 - Emprestar livro\n";
         menu += "9 - Devolver livro\n";
-        menu += "10 - Listar empréstimos\n";
+        menu += "10 - Listar emprestimos\n";
         menu += "0 - Sair\n";
-        menu += "Escolha uma opção: ";
+        menu += "Escolha uma op��o: ";
         System.out.print(menu);
     }
 

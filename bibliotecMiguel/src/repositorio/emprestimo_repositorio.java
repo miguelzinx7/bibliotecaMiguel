@@ -10,7 +10,7 @@ public class emprestimo_repositorio {
 
     public static void emprestarLivro(emprestimo e) {
         emprestimos.add(e);
-        System.out.println("✅ Livro emprestado com sucesso.");
+        System.out.println(" Livro emprestado com sucesso.");
     }
 
     public static void devolverLivro(int cpf, int isbn) {
@@ -21,18 +21,18 @@ public class emprestimo_repositorio {
             if (e.getCpfUsuario() == cpf && e.getIsbnLivro() == isbn) {
                 iterator.remove();
                 encontrado = true;
-                System.out.println("📤 Livro devolvido com sucesso.");
+                System.out.println(" Livro devolvido com sucesso.");
                 break;
             }
         }
         if (!encontrado) {
-            System.out.println("❌ Empréstimo não encontrado.");
+            System.out.println("Emprestimo n�o encontrado.");
         }
     }
 
     public static void listarEmprestimos() {
         if (emprestimos.isEmpty()) {
-            System.out.println("📭 Nenhum empréstimo registrado.");
+            System.out.println("� Nenhum emprestimo registrado.");
         } else {
             for (emprestimo e : emprestimos) {
                 System.out.println(e);

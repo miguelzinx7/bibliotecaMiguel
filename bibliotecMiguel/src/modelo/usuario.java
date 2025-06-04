@@ -10,6 +10,11 @@ public class usuario {
 		this.email = email;
 		this.nome = nome;
 	}
+	
+	public int getCpf() {
+	    return cpf;
+	}
+
 	@Override
 	public String toString() {
 		String relatorio = "\nNome: "+this.nome + this.cpf + this.email;

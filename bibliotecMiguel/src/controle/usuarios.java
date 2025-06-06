@@ -9,7 +9,7 @@ public class usuarios {
         usuario_repositorio.adicionarUsuario(u);
     }
 
-    public static void removerUsuario(int cpf) {
+    public static void removerUsuario(String cpf) {
         usuario_repositorio.removerUsuario(cpf);
     }
 

@@ -2,16 +2,16 @@ package modelo;
 
 public class usuario {
 	private String nome;
-	private long cpf;
+	private String cpf;
 	private String email;
-	public usuario(String nome, long cpf, String email) {
+	public usuario(String nome, String cpf, String email) {
 		
 		this.cpf = cpf;
 		this.email = email;
 		this.nome = nome;
 	}
 	
-	public long getCpf() {
+	public String getCpf() {
 	    return cpf;
 	}
 

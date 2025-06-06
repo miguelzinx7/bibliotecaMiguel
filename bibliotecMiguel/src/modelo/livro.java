@@ -23,9 +23,6 @@ public class livro {
 	public String getTitulo() {
 		return titulo;
 	}
-	public String getEditora() {
-		return editora;
-	}
 
 	public int getIsbn() {
 		return isbn;
@@ -53,8 +50,8 @@ public class livro {
 	
 	@Override
 	public String toString() {
-		String relatorio ="\nTitulo"+this.titulo;
-		relatorio += "\nISBN:"+this.isbn;
+		String relatorio ="\nTitulo: "+this.titulo;
+		relatorio += "\nISBN: "+this.isbn;
 		return relatorio;
 	}
 	

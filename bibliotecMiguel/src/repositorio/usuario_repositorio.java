@@ -5,7 +5,7 @@ import java.util.Map;
 import modelo.usuario;
 
 public class usuario_repositorio {
-    private static Map<Long, usuario> usuarios = new HashMap<>();
+    private static Map<String, usuario> usuarios = new HashMap<>();
 
     public static void adicionarUsuario(usuario u) {
         if (usuarios.containsKey(u.getCpf())) {
@@ -16,7 +16,7 @@ public class usuario_repositorio {
         }
     }
 
-    public static void removerUsuario(long cpf) {
+    public static void removerUsuario(String cpf) {
         if (usuarios.remove(cpf) != null) {
             System.out.println(" Usuario removido.");
         } else {

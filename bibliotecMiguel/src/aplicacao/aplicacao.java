@@ -66,7 +66,7 @@ public class aplicacao {
                         String nome = teclado.nextLine();
 
                         System.out.print("CPF (apenas numeros): ");
-                        int cpf = Integer.parseInt(teclado.nextLine());
+                        String cpf = teclado.nextLine();
 
                         System.out.print("Email: ");
                         String email = teclado.nextLine();
@@ -77,7 +77,7 @@ public class aplicacao {
 
                     case 6:
                         System.out.print("Informe o CPF do usuario para remover: ");
-                        int cpfRemover = Integer.parseInt(teclado.nextLine());
+                        String cpfRemover =teclado.nextLine();
                         usuarios.removerUsuario(cpfRemover);
                         break;
 
